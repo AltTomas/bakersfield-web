@@ -1,0 +1,24 @@
+@import 'scss/variables/_colors.scss';
+@import 'scss/variables/_fontSizes.scss';
+
+.root {
+  @include xlarge;
+  box-shadow: 0 3px 0 0 $white;
+  color: $white;
+  height: 40px;
+  margin: 8px;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  width: 120px;
+
+  &:hover {
+    box-shadow: 0 0 0 3px $white;
+  }
+}
+
+.selected {
+  background-color: $white;
+  box-shadow: 0 0 0 3px $white;
+  color: $black;
+}
