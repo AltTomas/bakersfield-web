@@ -1,0 +1,84 @@
+@import 'scss/variables/_colors.scss';
+@import 'scss/variables/_fontSizes.scss';
+
+.base {
+  @include medium;
+  color: $black;
+  transform: translateZ(0);
+}
+
+.xxsmall {
+  @include xxsmall;
+}
+
+.xsmall {
+  @include xsmall;
+}
+
+.small {
+  @include small;
+}
+
+.medium {
+  @include medium;
+}
+
+.large {
+  @include large;
+}
+
+.xlarge {
+  @include xlarge;
+}
+
+.xxlarge {
+  @include xxlarge;
+}
+
+.xxxlarge {
+  @include xxxlarge;
+}
+
+.title {
+  @include title;
+}
+
+.xtitle {
+  @include xtitle;
+}
+
+.xxtitle {
+  @include xxtitle;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.semilight {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.extrabold {
+  font-weight: 700;
+}
+
+.white {
+  color: $white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}

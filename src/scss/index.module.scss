@@ -1,0 +1,12 @@
+@import 'rfs/scss/_rfs.scss';
+@import 'scss/variables/_colors.scss';
+
+html,
+body {
+  @include responsive-font-size(17);
+  background-color: $black;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
