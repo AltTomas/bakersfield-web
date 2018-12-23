@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import JssProvider from 'react-jss/lib/JssProvider';
 import { create } from 'jss';
 import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 
 import App from './layout';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import styles from './styles.module.scss';
+import { theme } from './styles';
 
 const generateClassName = createGenerateClassName();
 const jss = create(jssPreset());
@@ -17,13 +19,15 @@ class AppContainer extends Component {
   render() {
     return (
       <JssProvider jss={jss} generateClassName={generateClassName}>
-        <div className={styles.container}>
-          <div className={styles.topContainer}>
-            <Navbar />
+        <MuiThemeProvider theme={theme}>
+          <div className={styles.container}>
+            <div className={styles.topContainer}>
+              <Navbar />
+            </div>
+            <App />
+            <Footer />
           </div>
-          <App />
-          <Footer />
-        </div>
+        </MuiThemeProvider>
       </JssProvider>
     );
   }

@@ -5,6 +5,8 @@ import createHistory from 'history/createBrowserHistory';
 import { reducer as formReducer } from 'redux-form';
 import { fetchMiddleware } from 'redux-recompose';
 
+import { reducer as navbar } from './navbar/reducer';
+
 export const history = createHistory();
 
 const deleteValue = (state, action) => {
@@ -25,7 +27,8 @@ const form = formReducer.plugin({
 
 const reducers = combineReducers({
   form,
-  router
+  router,
+  navbar
 });
 
 const middlewares = [routerMiddleware(history)];

@@ -2,15 +2,15 @@
 @import 'scss/variables/_fontSizes.scss';
 
 .root {
-  @include xlarge;
+  @include medium;
   box-shadow: 0 3px 0 0 $white;
   color: $white;
-  height: 40px;
-  margin: 8px;
-  padding: 10px;
+  height: 25px;
+  margin: 0 10px;
   text-transform: uppercase;
   transition: all 0.2s ease;
   width: 120px;
+  font-weight: 300;
 
   &:hover {
     box-shadow: 0 0 0 3px $white;
@@ -21,4 +21,5 @@
   background-color: $white;
   box-shadow: 0 0 0 3px $white;
   color: $black;
+  font-weight: 600;
 }

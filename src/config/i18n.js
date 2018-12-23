@@ -19,4 +19,10 @@ i18next.addResources('es', 'Footer', {
   stores: 'Locales:'
 });
 
+i18next.addResources('es', 'Navbar', {
+  us: 'Nosotros',
+  home: 'Inicio',
+  products: 'Productos'
+});
+
 requireAll(require.context('..', true, /i18n[\w]*\.js$/));

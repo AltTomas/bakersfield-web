@@ -1,7 +1,20 @@
 $black: rgba(0, 0, 0, 0.87);
 $white: #FFF;
 $footer: #FDF9ED;
-$footer-shadow: rgba(0, 0, 0 , 0.63);
+$footer-shadow: rgba(0, 0, 0, 0.63);
 $footer-font-color: rgb(255, 247, 229);
+$disabled-gray: rgba(0, 0, 0, 0.38);
+$input-primary: #4D97FA;
+$divider-base: rgba(0, 0, 0, 0.15);
+$gray: rgba(0, 0, 0, 0.54);
+$error: #F44336;
 
+// sass-lint:disable no-misspelled-properties
 
+:export {
+  disabledGray: $disabled-gray;
+  inputPrimary: $input-primary;
+  dividerBase: $divider-base;
+  gray: $gray;
+  error: $error;
+}
