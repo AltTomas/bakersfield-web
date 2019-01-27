@@ -4,7 +4,7 @@
 html,
 body {
   @include responsive-font-size(17);
-  background-color: $black;
+  background-color: $background;
   font-family: 'Nunito';
   height: 100%;
   margin: 0;

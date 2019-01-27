@@ -33,3 +33,9 @@
 @mixin xxtitle {
   @include responsive-font-size(36);
 }
+@mixin maincardtext {
+  @include responsive-font-size(60);
+}
+@mixin supertitle {
+  @include responsive-font-size(100);
+}

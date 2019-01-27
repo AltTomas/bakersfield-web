@@ -2,26 +2,21 @@
 @import 'scss/variables/_fontSizes.scss';
 
 .root {
-  @include small;
-  box-shadow: 0 3px 0 0 $white;
+  @include medium;
   color: $white;
-  font-weight: 300;
-  height: 20px;
-  margin: 0 10px;
+  font-weight: 400;
+  margin: 0 15px;
+  padding: 20px 5px;
   text-transform: uppercase;
   // sass-lint:disable-all
   transition: all 0.3s ease;
   // sass-lint:enable-all 
-  width: 100px;
 
   &:hover {
-    box-shadow: 0 0 0 3px $white;
+    text-decoration: line-through;
   }
 }
 
 .selected {
-  background-color: $white;
-  box-shadow: 0 0 0 3px $white;
-  color: $black;
-  font-weight: 600;
+  text-decoration: line-through;
 }

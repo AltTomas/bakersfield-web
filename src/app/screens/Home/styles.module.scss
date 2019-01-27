@@ -1,0 +1,45 @@
+@import 'scss/variables/_fontSizes.scss';
+@import 'scss/variables/_colors.scss';
+
+.bakersText {
+  @include supertitle;
+  align-self: flex-start;
+  font-family: 'Permanent Marker', cursive;
+  padding-left: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainImage {
+  width: 100%;
+}
+
+.firstImgContainer {
+  background-color: $input-primary;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.firstImg {
+  border-radius: 1000px;
+  height: 600px;
+  padding: 20px 0;
+  width: 600px;
+}
+
+.firstImgText {
+  @include maincardtext;
+}
+
+.firstImgTextContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}

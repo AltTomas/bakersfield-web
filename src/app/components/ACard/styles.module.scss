@@ -1,0 +1,43 @@
+@import 'scss/variables/_colors.scss';
+@import 'scss/variables/_mediaQueries.scss';
+
+.base {
+  background-color: $card-background;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 0 $card-shadow-1, -0.5px -0.5px 2px 0 $card-shadow-2;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 15px 20px;
+  @media #{$tablet-mobile} {
+    padding: 10px;
+  }
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerContent {
+  width: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.active {
+  max-height: 600px;
+  padding: 5px 0;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
+}
+
+.inactive {
+  max-height: 0;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+};

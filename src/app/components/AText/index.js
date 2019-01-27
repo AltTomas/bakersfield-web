@@ -69,7 +69,6 @@ class AText extends Component {
         plugins={[breaks]}
         unwrapDisallowed
         disallowedTypes={['root', 'paragraph']}
-        className={`${styles.base} ${style} ${this.props.className}`}
         renderers={{
           link: renderLinkComponent,
           text: handleCustomTag

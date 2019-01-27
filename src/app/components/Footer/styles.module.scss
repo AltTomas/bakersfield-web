@@ -4,9 +4,9 @@
 .container {
   align-items: center;
   background-color: $footer;
-  box-shadow: 0 3px 19px 2px $footer-shadow;
+  box-shadow: 0 2px 10px 1px $footer-shadow;
   display: flex;
-  height: 150px;
+  height: 80px;
   justify-content: center;
   width: 100%;
 }

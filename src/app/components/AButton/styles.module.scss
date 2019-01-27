@@ -1,0 +1,182 @@
+@import 'scss/variables/_colors.scss';
+@import 'scss/variables/_fontSizes.scss';
+
+.base {
+  background-color: $button-light-blue;
+  color: $white;
+  text-transform: none;
+
+  &:hover {
+    background-color: $button-light-blue-hover;
+  }
+}
+
+.baseFlat {
+  background-color: $transparent;
+  color: $button-light-blue;
+  text-transform: none;
+
+  &:hover {
+    background-color: $text-button-blue-hover;
+  }
+}
+
+.baseOutlined {
+  background-color: $transparent;
+  border-color: $button-light-blue;
+  border-radius: 50px;
+  color: $button-light-blue;
+  text-transform: none;
+
+  &:hover {
+    background-color: $text-button-blue-hover;
+  }
+}
+
+.gray {
+  background-color: $gray;
+  color: $white;
+}
+
+.grayFlat {
+  background-color: transparent;
+  color: $gray;
+}
+
+.grayOutlined {
+  background-color: transparent;
+  border-color: $gray;
+}
+
+.disabled {
+  background-color: $disabled-gray;
+  color: $white;
+}
+
+.disabledFlat {
+  background-color: transparent;
+  color: $white;
+}
+
+.disabledOutlined {
+  background-color: transparent;
+  border-color: $disabled-gray;
+}
+
+.buttonProgress {
+  color: $button-light-blue;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.small {
+  @include small
+}
+
+.smallFlat {
+  @include small
+}
+
+.medium {
+  @include medium;
+}
+
+.mediumFlat {
+  @include medium
+}
+
+.large {
+  @include large;
+}
+
+.largeFlat {
+  @include large;
+}
+
+.blue {
+  background-color: $button-blue;
+
+  &:hover {
+    background-color: $button-blue-hover;
+  }
+}
+
+.blueFlat {
+  color: $button-blue;
+
+  &:hover {
+    background-color: $text-button-blue-hover;
+  }
+}
+
+.blueOutlined {
+  color: $button-blue;
+
+  &:hover {
+    background-color: $text-button-blue-hover;
+  }
+}
+
+.darkBlue {
+  background-color: $button-dark-blue;
+
+  &:hover {
+    background-color: $button-dark-blue-hover;
+  }
+}
+
+.darkBlueFlat {
+  color: $button-dark-blue;
+
+  &:hover {
+    background-color: $text-button-dark-blue-hover;
+  }
+}
+
+.green {
+  background-color: $button-green;
+
+  &:hover {
+    background-color: $button-green-hover;
+  }
+}
+
+.greenFlat {
+  color: $button-green;
+
+  &:hover {
+    background-color: $text-button-green-hover;
+  }
+}
+
+.white {
+  background-color: $white;
+  color: $button-dark-blue;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+}
+
+.whiteFlat {
+  color: $white;
+
+  &:hover {
+    background-color: $text-button-white-hover;
+  }
+}
+
+.labelFullWidth {
+  width: 100%;
+}
